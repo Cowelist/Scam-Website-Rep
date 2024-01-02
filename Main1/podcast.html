@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="podcast.css">
+    <script type="module" src="pod_dark_light_mode.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+       
+            <div class="quote">
+                <a href="index.html"><button>Home</button></a>
+                <a href="information.html"><button>Information</button></a>
+                <a href="podcast.html"><button>Podcast</button></a>
+            </div>
+    
+            <div class="on_off_button" onclick="toggleDarkMode()">
+                <input type="checkbox" id="check_pod">
+                <label class="knapp" for="check_pod"></label>
+            </div>
+
+        </nav>
+    </header>
+
+        <video controls class="podcast_video" src="Podcast/Video.mp4"></video>
+   
+</body>
+</html>

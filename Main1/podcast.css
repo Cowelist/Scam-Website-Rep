@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+
+header {
+    padding: 30px 10%;
+    background-color: #0D0D0D;
+    height: 2rem;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: aliceblue;
+    background-color: #0D0D0D;
+}
+
+.podcast_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 30rem;
+    margin: auto;
+    max-width: 100%;
+    
+}
+
+
+#check {
+
+
+}
+
+.on_off_button {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100px; 
+    height: 20vh; 
+    margin: 0px;
+    top: -110px;
+    right: -10px;
+    z-index: 100px;
+}
+
+.knapp {
+    background-color: #F29727;
+    width: 65px;
+    height: 65px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.knapp ::before {
+    position: absolute;
+    content: '';
+    background-color: aliceblue; 
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+input:checked + .knapp {
+    background-color: #033859;
+}
+input:checked + .knapp ::before {
+    transform: translate(100px);
+
+}
+
+input{
+    display: none;
+}
+
+:root {
+    --primary-color: #3F83BF ;
+    --secondary-color: #0D0D0D;
+}
+
+.dark-theme {
+    --primary-color: #193773 ;
+    --secondary-color: #fff;  
+}
+

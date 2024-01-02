@@ -1,0 +1,156 @@
+ body{
+    margin: 0;
+    color: #0D0D0D;
+    background-color: var(--primary-color);
+}
+
+img,
+svg,
+Picture {
+   max-width: 100%;
+   height: auto;
+   vertical-align: middle;
+} 
+
+
+
+.tittel {
+   /* position: relative; */
+    padding:  20px 5vw; 
+    font-size: 50px;
+    max-width: 30px;
+    margin-bottom: 0px;
+    max-height: 50px;
+    color: var(--third-color);
+} 
+
+header {
+    padding: 30px 10%;
+    background-color:#0D0D0D;
+    height: 2rem;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #0D0D0D;
+}
+
+button{
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: aliceblue;
+    background-color: #0D0D0D;
+    
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.start_bildet {
+    position: relative;
+    height: 400px;
+    max-width: 450px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    float: right;
+    top: -11rem;
+    transform: translateX(80px);
+    padding-right: 100px;
+
+}
+
+
+.border {
+    display: grid;
+    grid-template-columns:repeat(autofit, minmax(250px, 1fr)) ;
+    margin-top: 50px;
+}
+
+
+.text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content: start;
+    align-items: flex-start;
+    max-width: auto;
+    max-height: 175px;
+    color: var(--secondary-color);
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+} 
+
+#check {}
+
+.on_off_button {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100px; 
+    height: 20vh; 
+    margin: 0px;
+    top: -110px;
+    right: -10px;
+    z-index: 100px;
+}
+
+.knapp {
+    background-color: #F29727;
+    width: 65px;
+    height: 65px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.knapp ::before {
+    position: absolute;
+    content: '';
+    background-color: aliceblue; 
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+input:checked + .knapp {
+    background-color: #033859;
+}
+input:checked + .knapp ::before {
+    transform: translate(100px);
+
+}
+
+input{
+    display: none;
+}
+
+:root {
+    --primary-color: #F22222 ;
+    --secondary-color: #0D0D0D;
+    --third-color: #0D0D0D
+}
+
+.dark-theme {
+    --primary-color: #731010 ;
+    --secondary-color: #fff;  
+    --third-color: #151B26
+}
